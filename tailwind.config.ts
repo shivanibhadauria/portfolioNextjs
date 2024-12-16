@@ -20,7 +20,13 @@ const config: Config = {
         md: "2rem",
       },
     },
-    extend: {},
+    extend: {
+  fontFamily:{
+    sans: 'var(--font-sans)',
+    sarif: 'var(--font-serif)',
+  }
+
+    },
   },
   plugins: [],
 };
