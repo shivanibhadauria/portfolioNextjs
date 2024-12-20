@@ -24,10 +24,26 @@ const config: Config = {
   fontFamily:{
     sans: 'var(--font-sans)',
     sarif: 'var(--font-serif)',
-  }
+  },
+  maskImage: {
+    'linear-gradient': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
+  },
+  // Add this manually to support Chromium-based browsers
+  '-webkit-mask-image': {
+    'linear-gradient': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
+  },
 
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.mask-image-linear-gradient': {
+          'mask-image': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
+          '-webkit-mask-image': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
+        },
+      });
+    },
+  ],
 };
 export default config;
