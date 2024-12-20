@@ -1,6 +1,7 @@
 import { HeroSection } from "@/sections/Hero";
 import { Header } from "../sections/Header";
 import { ProjectsSection } from "@/sections/Projects";
+import { TapeSection } from "@/sections/Tape";
 export default function Home() {
   return (
     <div>
@@ -9,6 +10,7 @@ export default function Home() {
           <Header />
           <HeroSection />
           <ProjectsSection />
+          <TapeSection />
         </div>
       </h1>
     </div>
