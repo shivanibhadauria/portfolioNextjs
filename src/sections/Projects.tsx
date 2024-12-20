@@ -4,6 +4,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import ArrowUp from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
+import Grainimage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
   {
@@ -63,9 +64,13 @@ export const ProjectsSection = () => {
         <div className=" flex  flex-col  gap-20 mt-10  ">
           {portfolioProjects.map((project) => (
             <div
-              className=" bg-gray-800 rounded-3xl z-0  relative after:content-[''] after:absolute after:inset-0 after:z-10 overflow-hidden  after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20  px-8 pt-8 "
+              className=" bg-gray-800 rounded-3xl z-0  relative after:content-[''] after:absolute after:inset-0 after:z-10 overflow-hidden  after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20  px-8 pt-8 after:pointer-events-none "
               key={project.title}
             >
+              <div
+                className=" absolute -z-10 opacity-5 inset-0"
+                style={{ backgroundImage: `url(${Grainimage.src})` }}
+              ></div>
               <div className="   gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text uppercase tracking-widest font-bold inline-flex ">
                 <span className="">{project.company}</span>
                 <span className="  "> &bull; </span>
