@@ -3,6 +3,9 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import Image from "next/image";
+import { SectionHeader } from "../components/SectionHeader";
+import Card from "@/components/Card";
 
 const testimonials = [
   {
@@ -38,5 +41,47 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
+  return (
+    <div className=" py-16 lg:py-24  ">
+      <div className=" container ">
+        <SectionHeader
+          eyebrow="Happy CLient"
+          title=" What client say about me"
+          description="  Don't just take my word for it.See what my clients have to say about my
+        work."
+        />
+
+        <div className=" mt-16 lg:mt-20 flex overflow-x-clip   mask-image-linear-gradient-right ">
+          <div className="flex flex-none gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card
+                className="max-w-xs md:max-w-md md:p-8 "
+                key={`${testimonial.name}-${index}`}
+              >
+                <div className="flex gap-4 items-center ">
+                  <div className=" bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0 size-14 ">
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="max-h-full"
+                    />
+                  </div>
+
+                  <div>
+                    <div className="font-semibold">{testimonial.name}</div>
+                    <div className=" text-white/40 text-sm  ">
+                      {testimonial.position}
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 text-sm md:text-base md:mt-6 ">
+                  {testimonial.text}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };

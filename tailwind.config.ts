@@ -25,22 +25,20 @@ const config: Config = {
     sans: 'var(--font-sans)',
     sarif: 'var(--font-serif)',
   },
-  maskImage: {
-    'linear-gradient': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
-  },
-  // Add this manually to support Chromium-based browsers
-  '-webkit-mask-image': {
-    'linear-gradient': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
-  },
+  
 
     },
   },
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
-        '.mask-image-linear-gradient': {
+        '.mask-image-linear-gradient-top': {
           'mask-image': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
           '-webkit-mask-image': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
+        },
+        '.mask-image-linear-gradient-right': {
+          'mask-image': 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+          '-webkit-mask-image': 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
         },
       });
     },

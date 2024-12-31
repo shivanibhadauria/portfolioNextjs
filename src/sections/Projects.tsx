@@ -4,7 +4,8 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import ArrowUp from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
-import Grainimage from "@/assets/images/grain.jpg";
+import { SectionHeader } from "@/components/SectionHeader";
+import Card from "../components/Card";
 
 const portfolioProjects = [
   {
@@ -49,29 +50,18 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container ">
-        <div className="flex justify-center">
-          <p className=" bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center font-semibold uppercase tracking-widest  ">
-            REAL-WORLD RESULTS
-          </p>
-        </div>
-        <h2 className=" font-serif font-bold text-3xl mt-6 text-center md:text-5xl ">
-          Featured Projects
-        </h2>
-        <p className=" text-white/60 text-center mt-4 md:text-lg lg:text-xl max-w-md mx-auto ">
-          See how I transformed consepts into engaging digital experience
-        </p>
+        <SectionHeader
+          eyebrow=" REAL-WORLD RESULTS"
+          title="Featured Projects"
+          description="See how I transformed consepts into engaging digital experience"
+        />
 
         <div className=" flex  flex-col  gap-20 mt-10 md:mt-20  ">
-          {portfolioProjects.map((project) => (
-            <div
-              className=" bg-gray-800 rounded-3xl z-0  relative after:content-[''] after:absolute after:inset-0 after:z-10 overflow-hidden  after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20  px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none  "
-              key={project.title}
+          {portfolioProjects.map((project, index) => (
+            <Card
+              className="  px-8 pt-8 md:pt-12 pb-0 md:px-10 lg:pt-16 lg:px-20  "
+              key={`${project.title}-${index}`}
             >
-              <div
-                className=" absolute -z-10 opacity-5 inset-0"
-                style={{ backgroundImage: `url(${Grainimage.src})` }}
-              ></div>
-
               <div className=" lg:grid  lg:grid-cols-2 lg:gap-16  ">
                 <div className="lg:pb-16">
                   <div className="   gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text uppercase tracking-widest font-bold inline-flex ">
@@ -84,9 +74,12 @@ export const ProjectsSection = () => {
                   </h2>
                   <hr className=" border-t-2 border-white/5 mt-4 " />
                   <ul className="flex flex-col gap-4 md:mt-5 mt-4">
-                    {project.results.map((result) => (
+                    {project.results.map((result, index) => (
                       <>
-                        <li className="flex gap-2 text-sm md:text-base text-white/50 ">
+                        <li
+                          key={`${result.title}-${index}`}
+                          className="flex gap-2 text-sm md:text-base text-white/50 "
+                        >
                           <CheckIcon className="size-5 md:size-6" />
                           <span>{result.title}</span>
                         </li>
@@ -112,7 +105,7 @@ export const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

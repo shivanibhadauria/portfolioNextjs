@@ -9,7 +9,7 @@ import Orbit from "../components/Orbit";
 export const HeroSection = () => {
   return (
     <div className="py-32 md-py-48 lg:py-60 relative z-0 overflow-x-clip ">
-      <div className=" absolute inset-0 mask-image-linear-gradient  ">
+      <div className=" absolute inset-0 mask-image-linear-gradient-top  ">
         <div
           className=" absolute  inset-0 -z-30  opacity-5  "
           style={{ backgroundImage: `url(${grain.src})` }}
