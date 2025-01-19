@@ -6,6 +6,7 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import Image from "next/image";
 import { SectionHeader } from "../components/SectionHeader";
 import Card from "@/components/Card";
+import { Fragment } from "react";
 
 const testimonials = [
   {
@@ -51,34 +52,42 @@ export const TestimonialsSection = () => {
         work."
         />
 
-        <div className=" mt-16 lg:mt-20 flex overflow-x-clip   mask-image-linear-gradient-right ">
-          <div className="flex flex-none gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                className="max-w-xs md:max-w-md md:p-8 "
-                key={`${testimonial.name}-${index}`}
-              >
-                <div className="flex gap-4 items-center ">
-                  <div className=" bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0 size-14 ">
-                    <Image
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="max-h-full"
-                    />
-                  </div>
+        <div className=" mt-12 lg:mt-20 flex overflow-x-clip   mask-image-linear-gradient-right py-4 -my-4 ">
+          <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused] ">
+            {[
+              ...new Array(2).fill(0).map((_, idx) => (
+                <Fragment key={idx}>
+                  {testimonials.map((testimonial, index) => (
+                    <Card
+                      className="max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 transition duration-300  "
+                      key={`${testimonial.name}-${index}`}
+                    >
+                      <div className="flex gap-4 items-center ">
+                        <div className=" bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0 size-14 ">
+                          <Image
+                            src={testimonial.avatar}
+                            alt={testimonial.name}
+                            className="max-h-full"
+                          />
+                        </div>
 
-                  <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className=" text-white/40 text-sm  ">
-                      {testimonial.position}
-                    </div>
-                  </div>
-                </div>
-                <p className="mt-4 text-sm md:text-base md:mt-6 ">
-                  {testimonial.text}
-                </p>
-              </Card>
-            ))}
+                        <div>
+                          <div className="font-semibold">
+                            {testimonial.name}
+                          </div>
+                          <div className=" text-white/40 text-sm  ">
+                            {testimonial.position}
+                          </div>
+                        </div>
+                      </div>
+                      <p className="mt-4 text-sm md:text-base md:mt-6 ">
+                        {testimonial.text}
+                      </p>
+                    </Card>
+                  ))}
+                </Fragment>
+              )),
+            ]}
           </div>
         </div>
       </div>
