@@ -30,7 +30,7 @@ const config: Config = {
   animation:{
     'ping-large': "ping-large 1s ease-in-out infinite ",
     'move-left': "move-left 30s linear infinite",
-    'move-right': "move-right 30s linear infinite"
+    'move-right': "move-right' 30s linear infinite"
     
   },
 
@@ -66,7 +66,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
+    function ({ addUtilities }: any) {
       addUtilities({
         '.mask-image-linear-gradient-top': {
           'mask-image': 'linear-gradient(to bottom, transparent, black 10%, black 70%, transparent)',
