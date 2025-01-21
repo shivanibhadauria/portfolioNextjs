@@ -4,7 +4,6 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -26,11 +25,10 @@ const config: Config = {
     sarif: 'var(--font-serif)',
   },
 
-  animation:{
-    'ping-large': "ping-large 1s ease-in-out infinite ",
-    'move-left': "move-left 30s linear infinite",
-    'move-right': "move-right' 30s linear infinite"
-    
+  animation: {
+    "ping-large": "'ping-large' 1s ease-in-out infinite",
+    "move-left": "'move-left' 30s linear infinite",
+    "move-right": "'move-right' 30s linear infinite",
   },
 
   keyframes:{
@@ -83,4 +81,4 @@ const config: Config = {
     },
   ],
 };
-export default config;
+export default config
