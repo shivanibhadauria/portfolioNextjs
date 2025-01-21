@@ -24,8 +24,8 @@ export const TapeSection = () => {
           <div className="flex flex-none gap-4 py-3 pr-4 animate-move-left ">
             {[...new Array(2)].fill(0).map((_, idx) => (
               <Fragment key={idx}>
-                {words.map((word) => (
-                  <div key={word} className=" inline-flex gap-4 ">
+                {words.map((word, index) => (
+                  <div key={index} className=" inline-flex gap-4 ">
                     <span className=" uppercase text-gray-900 font-extrabold text-sm ">
                       {word}
                     </span>
