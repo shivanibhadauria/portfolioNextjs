@@ -33,7 +33,7 @@ const portfolioProjects = [
     image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
+    company: "Quantum Dynamic",
     year: "2023",
     title: "AI Startup Landing Page",
     results: [
