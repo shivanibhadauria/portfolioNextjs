@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Inter, Calistoga } from "next/font/google";
 import { twMerge } from "tailwind-merge";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -24,6 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+<GoogleTagManager gtmId="GTM-M4KF5DNS" />
       <body
         className={twMerge(
           inter.variable,
