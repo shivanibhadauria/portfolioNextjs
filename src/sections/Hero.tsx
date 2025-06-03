@@ -117,7 +117,7 @@ export const HeroSection = () => {
               <span className="font-semibold">Explore my work</span>
               <Arrowdown className="size-4  " />
             </button>
-            <button className="border-white/15 border  bg-white text-gray-900  rounded-xl h-12 px-6 inline-flex items-center gap-2  ">
+            <button data-gtm-click="cta_button" className="border-white/15 border  bg-white text-gray-900  rounded-xl h-12 px-6 inline-flex items-center gap-2  ">
               <span> 👋 </span>
               <span className="font-semibold">Lets connect</span>
             </button>
