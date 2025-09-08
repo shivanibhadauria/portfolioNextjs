@@ -3,7 +3,7 @@ import "./globals.css";
 
 import { Inter, Calistoga } from "next/font/google";
 import { twMerge } from "tailwind-merge";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
