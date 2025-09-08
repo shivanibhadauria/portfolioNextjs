@@ -89,8 +89,8 @@ export const ProjectsSection = () => {
                       </>
                     ))}
                   </ul>
-                  <a className="   " href={project.link}>
-                    <button
+                  <a data-gtm-click="cta_button" className="   " href={project.link}>
+                    <button 
                       type="button"
                       className=" text-gray-950  mt-8 bg-white h-12 w-full md:w-auto px-6 rounded-xl font-semibold items-center justify-center gap-2 flex   "
                     >
