@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import voltnext from "@/assets/images/voltnext.png";
+import resumind from "@/assets/images/resumind.png";
+import rewardpoint from "@/assets/images/rewardpoints.png";
 import ArrowUp from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
@@ -9,40 +9,40 @@ import Card from "../components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    Name: "VOLT NEXT",
+    year: "2025",
+    title: "Bolt AI Clone – SaaS Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Replicated modern SaaS UI inspired by Bolt AI" },
+      { title: "Built with Next.js and Tailwind CSS for speed and scalability" },
+      { title: "Responsive design optimized for desktop and mobile" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://voltnext-ai.vercel.app/",
+    image: voltnext,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    Name: "RESUMIND",
+    year: "2025",
+    title: "AI Resume Analyzer – Smart Resume Review Toolage",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Compares resume with job descriptions to highlight missing skills." },
+      { title: "Gives personalized improvement tips for better job match." },
+      { title: "Built with Next.js and Puter for speed and scalability." },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://ai-resume-analyzer-phi-nine.vercel.app/",
+    image: resumind,
   },
   {
-    company: "Quantum Dynamic",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    Name: "Reward Points App",
+    year: "2025",
+    title: "Reward Points App – Customer Loyalty System",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Quickly reward customers with points." },
+      { title: "Drives repeat engagement for shops." },
+      { title: "Next.js + Express + MongoDB powered." },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://whatsappmsgsender.vercel.app",
+    image: rewardpoint,
   },
 ];
 
@@ -68,7 +68,7 @@ export const ProjectsSection = () => {
               <div className=" lg:grid  lg:grid-cols-2 lg:gap-16  ">
                 <div className="lg:pb-16">
                   <div className="   gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text uppercase tracking-widest font-bold inline-flex ">
-                    <span className="">{project.company}</span>
+                    <span className="">{project.Name}</span>
                     <span className="  "> &bull; </span>
                     <span>{project.year}</span>
                   </div>
@@ -102,7 +102,7 @@ export const ProjectsSection = () => {
                 </div>
                 <div>
                   <Image
-                    className=" mt-8  -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none "
+                    className=" mt-8  mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-3xl shadow-md shadow-gray-900/5  "
                     src={project.image}
                     alt="Project Image"
                   />

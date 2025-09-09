@@ -93,7 +93,7 @@ export const AboutSection = () => {
   const dragConstaints = useRef(null);
 
   return (
-    <div className="py-20   lg:py-28 ">
+    <div id="about-me" className="py-20   lg:py-28 ">
       <div className="container">
         <div>
           <SectionHeader

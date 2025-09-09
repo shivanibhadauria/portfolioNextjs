@@ -8,7 +8,7 @@ export const Header = () => {
         <a href="#Featured-Projects" className="nav-item">
           Project
         </a>
-        <a href="#" className="nav-item">
+        <a href="#about-me" className="nav-item">
           About
         </a>
         <a
