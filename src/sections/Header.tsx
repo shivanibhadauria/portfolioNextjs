@@ -8,9 +8,16 @@ export const Header = () => {
         <a href="#Featured-Projects" className="nav-item">
           Project
         </a>
+        <a
+          href="#experiences"
+          className="nav-item "
+        >
+          Experiences
+        </a>
         <a href="#about-me" className="nav-item">
           About
         </a>
+        
         <a
           href="#contact"
           className="nav-item bg-white hover:bg-white/70 hover:text-gray-900 text-gray-900 h-full "

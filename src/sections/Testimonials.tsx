@@ -22,7 +22,7 @@ const experiences = [
 
 export const TestimonialsSection = () => {
   return (
-    <div className=" py-16 lg:py-24  ">
+    <div id="experiences" className=" py-16 lg:py-24  ">
       <div className=" container ">
         <SectionHeader
           eyebrow="My Experience"
