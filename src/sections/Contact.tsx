@@ -1,9 +1,10 @@
+"use client";
 import ArrowRight from "../assets/icons/arrow-up-right.svg";
 import GrainImage from "../assets/images/grain.jpg";
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-12 lg:py-24 lg:pt-20 ">
+    <div id="contect" className="py-16 pt-12 lg:py-24 lg:pt-20 ">
       <div className="container">
         <div className=" bg-gradient-to-r from-emerald-300 to-sky-400 py-8 px-10 text-gray-950 text-center md:text-left rounded-3xl relative z-0 ">
           <div
@@ -23,10 +24,11 @@ export const ContactSection = () => {
             </div>
 
             <div>
-              <button className=" inline-flex bg-gray-900 items-center text-white px-6 h-12 rounded-xl w-max gap-2 border border-gray-900 ">
+              <a   href="mailto:shivanibhadauria37@gmail.com"
+              className=" inline-flex bg-gray-900 items-center text-white px-6 h-12 rounded-xl w-max gap-2 border border-gray-900 ">
                 <span className=" font-semibold  ">Contact Me</span>{" "}
                 <ArrowRight className="size-4" />{" "}
-              </button>
+              </a>
             </div>
           </div>
         </div>

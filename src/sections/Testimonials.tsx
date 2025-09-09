@@ -3,6 +3,10 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import nextjs from "@/assets/images/nextjs.png";
+import js from "@/assets/images/js.png"
+import react from "@/assets/images/react.png"
+import ts from "@/assets/images/ts.png"
 import Image from "next/image";
 import { SectionHeader } from "../components/SectionHeader";
 import Card from "@/components/Card";
@@ -10,35 +14,30 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
+    name: "JavaScript",
+    position: "The backbone of modern web development",
+    text: "JavaScript is a versatile, high-level programming language that powers dynamic and interactive websites. It allows developers to create responsive interfaces, handle events, and build full-featured web applications. I use JavaScript extensively to make websites fast, interactive, and user-friendly.",
+    avatar: js,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
+    name: "React",
+    position: "Building dynamic and interactive UIs",
+    text: "React is a powerful JavaScript library for building component-based, responsive user interfaces. I use React to create fast, maintainable, and scalable front-end applications, making it easier to manage state and deliver seamless user experiences.",
+    avatar: react,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
+    name: "TypeScript",
+    position: "Writing safer and more reliable code",
+    text: "TypeScript is a superset of JavaScript that adds static typing, making code easier to maintain and less prone to errors. I use TypeScript to catch bugs early, improve collaboration, and write scalable, robust applications.",
+    avatar: ts,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
+    name: "Next.js",
+    position: "The framework for modern web applications",
+    text: "Next.js is a React framework for building fast, SEO-friendly, and server-rendered applications. I use Next.js to create scalable, high-performance websites with features like SSR, SSG, and API routes, ensuring an optimal user experience.",
+    avatar: nextjs,
   },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
-  },
+
 ];
 
 export const TestimonialsSection = () => {
@@ -46,10 +45,9 @@ export const TestimonialsSection = () => {
     <div className=" py-16 lg:py-24  ">
       <div className=" container ">
         <SectionHeader
-          eyebrow="Happy CLient"
-          title=" What client say about me"
-          description="  Don't just take my word for it.See what my clients have to say about my
-        work."
+          eyebrow="Technologies I Use"
+          title="The tools shaping my development work"
+          description="Don’t just see the code—explore the technologies I rely on to build modern, fast, and scalable applications."
         />
 
         <div className=" mt-12 lg:mt-20 flex overflow-x-clip   mask-image-linear-gradient-right py-4 -my-4 ">
@@ -67,7 +65,8 @@ export const TestimonialsSection = () => {
                           <Image
                             src={testimonial.avatar}
                             alt={testimonial.name}
-                            className="max-h-full"
+                           
+                            className="max-h-full rounded-full"
                           />
                         </div>
 

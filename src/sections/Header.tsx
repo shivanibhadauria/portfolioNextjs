@@ -12,7 +12,7 @@ export const Header = () => {
           About
         </a>
         <a
-          href="#"
+          href="#contect"
           className="nav-item bg-white hover:bg-white/70 hover:text-gray-900 text-gray-900 h-full "
         >
           Contect

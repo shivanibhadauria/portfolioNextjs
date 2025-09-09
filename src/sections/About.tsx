@@ -16,7 +16,7 @@ import nodejs from "../assets/icons/nodejs.svg";
 import mongodb from "../assets/icons/mongodb.svg";
 import me from "../assets/images/me.png";
 import Map from "../assets/images/map.png";
-import SmileImage from "../assets/images/memoji-smile.png";
+import chatgpt from  "../assets/images/gpt.png";
 import CardHeader from "@/components/CardHeader";
 import Toolboxitem from "@/components/Toolboxitem";
 import { motion } from "framer-motion";
@@ -114,12 +114,12 @@ export const AboutSection = () => {
             <div className="grid grid-cols-1 gap-8  md:grid-cols-5 lg:grid-cols-3 md:gap-8 ">
               <Card className="h-[320px] md:col-span-2 lg:col-span-1 ">
                 <CardHeader
-                  title="My Reads"
-                  description="Explore the book shaping my perspectives."
+                  title="My Reads & Resources"
+                  description="Explore the ideas shaping my perspective."
                 />
 
                 <div className=" w-40 mx-auto mt-2 ">
-                  <Image src={Bookimage} alt="book" className="    " />
+                  <Image src={chatgpt} alt="book" className="    " />
                 </div>
               </Card>
 
