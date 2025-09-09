@@ -9,7 +9,12 @@ import CssIcon from "../assets/icons/css3.svg";
 import ReactIcon from "../assets/icons/react.svg";
 import ChromIcon from "../assets/icons/chrome.svg";
 import Github from "../assets/icons/github.svg";
-
+import js from "../assets/icons/js.svg";
+import tailwind from "../assets/icons/tailwind.svg";
+import nextjs from "../assets/icons/nextjs.svg";
+import nodejs from "../assets/icons/nodejs.svg";
+import mongodb from "../assets/icons/mongodb.svg";
+import me from "../assets/images/me.png";
 import Map from "../assets/images/map.png";
 import SmileImage from "../assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
@@ -20,34 +25,43 @@ import { useRef } from "react";
 const toolboxItems = [
   {
     title: "JavaScript",
-    iconType: HtmlIcon,
+    iconType: js,
   },
   {
     title: "HTML",
-    iconType: CssIcon,
+    iconType: HtmlIcon,
   },
   {
     title: "CSS",
-    iconType: ReactIcon,
+    iconType: CssIcon,
   },
   {
-    title: "tailwind",
-    iconType: ChromIcon,
+    title: "Tailwind",
+    iconType: tailwind,
   },
   {
     title: "React",
-    iconType: Github,
+    iconType: ReactIcon,
   },
   {
     title: "Next.js",
-    iconType: HtmlIcon,
+    iconType: nextjs ,
   },
+  {
+    title: "Node.js",
+    iconType: nodejs,
+  },
+  {
+    title: "MongoDB",
+    iconType: mongodb,
+
+  }
 ];
 
 const hobbies = [
   {
-    title: "Music",
-    emoji: "🎸",
+    title: "Traveling",
+    emoji: "✈️",
     left: "50%",
     right: "50%",
   },
@@ -58,35 +72,29 @@ const hobbies = [
     right: "30%",
   },
   {
-    title: "Music",
-    emoji: "🎸",
+    title: "Cooking",
+    emoji: "🍳",
     left: "40%",
     right: "80%",
   },
   {
-    title: "Music",
-    emoji: "🎸",
+    title: "Gaming",
+    emoji: "🎮",
     left: "10%",
     right: "20%",
   },
   {
-    title: "Music",
-    emoji: "🎸",
+    title: "Nature",
+    emoji: "🌳",
     left: "70%",
     right: "40%",
   },
+
   {
-    title: "Music",
-    emoji: "🎸",
-    left: "80%",
-    right: "40%",
-  },
-  {
-    title: "Music",
-    emoji: "🎸",
-    left: "70%",
-    right: "80%",
-  },
+    title: "Billiards",
+    emoji: "🎱",
+    left: "50%",
+  }
 ];
 
 export const AboutSection = () => {
@@ -172,7 +180,7 @@ export const AboutSection = () => {
                 <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  rounded-full  after:content-[''] after:absolute   after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30  ">
                   <div className=" absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s] "></div>
                   <div className=" absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10 "></div>
-                  <Image src={SmileImage} alt="smile" className="size-20" />
+                  <Image src={me} alt="smile" className="size-20 rounded-full" />
                 </div>
               </Card>
             </div>

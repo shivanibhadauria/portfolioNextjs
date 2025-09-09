@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Next.js - Cyan on Black (wordmark)</title>
+  <!-- Background -->
+  <rect width="256" height="256" fill="#000000" rx="24" />
+  <!-- Wordmark: Next.js -->
+  <text x="50%" y="132" text-anchor="middle" dominant-baseline="middle"
+        font-family="Inter, Arial, Helvetica, sans-serif" font-weight="800"
+        font-size="60" fill="#00FFFF">
+    Next<tspan font-size="28" dx="6">.js</tspan>
+  </text>
+</svg>

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import mememojiImage from "../assets/images/memoji-computer.png";
 import Arrowdown from "../assets/icons/arrow-down.svg";
 import grain from "../assets/images/grain.jpg";
 import Star from "../assets/icons/star.svg";
 import Sparkle from "../assets/icons/sparkle.svg";
 import Orbit from "../components/Orbit";
 import { Download } from 'lucide-react';
+import me from "../assets/images/me.png";
 
 
 export const HeroSection = () => {
@@ -95,7 +95,7 @@ export const HeroSection = () => {
       <div className="container">
         <div className=" flex flex-col items-center">
           
-          <Image className="size-[100px] rounded-full overflow-hidden bg-gray-200 flex items-center justify-center" src={mememojiImage} alt="memoji" />
+          <Image className="size-[100px] rounded-full overflow-hidden bg-gray-200 flex items-center justify-center" src={me} alt="memoji" />
 
 
           
