@@ -5,7 +5,8 @@ import Star from "../assets/icons/star.svg";
 import Sparkle from "../assets/icons/sparkle.svg";
 import Orbit from "../components/Orbit";
 import { Download } from 'lucide-react';
-import me from "../assets/images/me.png";
+import me from "../assets/images/me.jpg";
+
 
 
 export const HeroSection = () => {
@@ -95,7 +96,7 @@ export const HeroSection = () => {
       <div className="container">
         <div className=" flex flex-col items-center">
           
-          <Image className="size-[100px] rounded-full overflow-hidden bg-gray-200 flex items-center justify-center" src={me} alt="memoji" />
+          <Image  className="size-[100px] rounded-full overflow-hidden bg-gray-200 flex items-center justify-center object-cover " src={me} alt="memoji" />
 
 
           

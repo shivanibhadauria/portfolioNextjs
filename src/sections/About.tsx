@@ -14,9 +14,9 @@ import tailwind from "../assets/icons/tailwind.svg";
 import nextjs from "../assets/icons/nextjs.svg";
 import nodejs from "../assets/icons/nodejs.svg";
 import mongodb from "../assets/icons/mongodb.svg";
-import me from "../assets/images/me.png";
+import me from "../assets/images/me.jpg";
 import Map from "../assets/images/map.png";
-import chatgpt from  "../assets/images/gpt.png";
+import chatgpt from  "../assets/images/gpt.jpg";
 import CardHeader from "@/components/CardHeader";
 import Toolboxitem from "@/components/Toolboxitem";
 import { motion } from "framer-motion";
@@ -119,7 +119,8 @@ export const AboutSection = () => {
                 />
 
                 <div className=" w-40 mx-auto mt-2 ">
-                  <Image src={chatgpt} alt="book" className="    " />
+                  <Github />
+                  
                 </div>
               </Card>
 
@@ -157,7 +158,7 @@ export const AboutSection = () => {
                     <motion.div
                       drag
                       dragConstraints={dragConstaints}
-                      className=" absolute inline-flex  items-center gap-2 px-6 pt-1.5 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full  "
+                      className=" absolute inline-flex  items-center gap-2 px-6 py-1.5 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full  "
                       key={index}
                       style={{ left: item.left, top: item.right }}
                     >
@@ -180,7 +181,7 @@ export const AboutSection = () => {
                 <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  rounded-full  after:content-[''] after:absolute   after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30  ">
                   <div className=" absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s] "></div>
                   <div className=" absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10 "></div>
-                  <Image src={me} alt="smile" className="size-20 rounded-full" />
+                  <Image src={me} alt="smile" className="size-20 rounded-full object-cover" />
                 </div>
               </Card>
             </div>

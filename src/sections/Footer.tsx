@@ -1,4 +1,5 @@
 import ArrowRightUp from "@/assets/icons/arrow-up-right.svg";
+import { link } from "fs";
 
 const Navlinks = [
   {
@@ -8,11 +9,12 @@ const Navlinks = [
   {
     name: "Linkdin",
     link: "https://www.linkedin.com/in/shivanibhadauria37/",
-  },
+  }
+  ,
   {
-    name: "Instagram",
-    link: "https://www.instagram.com/shivani_bhadauria_?igsh=eGFyZzkxcHJ6cnhk&utm_source=qr",
-  },
+    name: "Resume",
+    link: "/Shivani-resume.pdf"
+  }
  
 ];
 
