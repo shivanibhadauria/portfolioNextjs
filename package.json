@@ -6,14 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@next/third-parties": "^15.3.3",
     "@svgr/webpack": "^8.1.0",
     "framer-motion": "^11.3.21",
     "lucide-react": "^0.542.0",
-    "next": "^15.2.3",
+    "next": "^16.2.1",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.4.0"
