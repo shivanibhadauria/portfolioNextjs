@@ -4,10 +4,7 @@ import grain from "../assets/images/grain.jpg";
 import Star from "../assets/icons/star.svg";
 import Sparkle from "../assets/icons/sparkle.svg";
 import Orbit from "../components/Orbit";
-import { Download } from 'lucide-react';
 import me from "../assets/images/me.jpg";
-
-
 
 export const HeroSection = () => {
   return (
@@ -95,42 +92,48 @@ export const HeroSection = () => {
 
       <div className="container">
         <div className=" flex flex-col items-center">
-          
-          <Image  className="size-[100px] rounded-full overflow-hidden bg-gray-200 flex items-center justify-center object-cover " src={me} alt="memoji" />
+          <Image
+            className="size-[100px] rounded-full overflow-hidden bg-gray-200 flex items-center justify-center object-cover "
+            src={me}
+            alt="memoji"
+          />
 
-
-          
           <div className=" bg-gray-950 flex  items-center justify-center gap-4 py-1.5 px-4 rounded-md border-gray-800 border ">
             <div className=" bg-green-500 size-2.5 rounded-full  relative">
               <div className="bg-green-500 inset-0 rounded-full animate-ping-large absolute "></div>
             </div>
-            <div className="text-sm font-medium ">
-             SHIVANI BHADAURIA
-            </div>
+            <div className="text-sm font-medium ">SHIVANI BHADAURIA</div>
           </div>
 
           <div className=" max-w-lg mx-auto ">
             <h1 className=" text-white font-serif text-3xl md:text-5xl  mt-8 tracking-wide  text-center   ">
-            Transforming Ideas Into Software
+              Transforming Ideas Into Software
             </h1>
             <p className="mt-4 text-center text-white/60 md:text-lg ">
-            I’m Shivani Bhadauria, a Fullstack Developer skilled in React.js, Next.js, Node.js, and Vue.js. Currently working at Edvanta Technologies.
+              I’m Shivani Bhadauria, a Fullstack Developer skilled in React.js,
+              Next.js, Node.js, and Vue.js. Currently working at Edvanta
+              Technologies.
             </p>
           </div>
 
           <div className="flex max-md:flex-col mt-4 gap-4 items-center">
             <button className=" border-white/15 border  rounded-xl inline-flex items-center gap-2   h-12 px-6 ">
-              <a href="#Featured-Projects"   className="font-semibold z-10 scroll-smooth ">Explore my work</a>
+              <a
+                href="#Featured-Projects"
+                className="font-semibold z-10 scroll-smooth "
+              >
+                Explore my work
+              </a>
               <Arrowdown className="size-4  " />
             </button>
-           
-            <a 
-               href="/Shivani-resume.pdf" 
-                             download
-                    className="border-white/15 border z-10 bg-white text-gray-900 rounded-xl h-12 px-6 inline-flex items-center gap-2 font-semibold"
-                          ><span><Download/></span>
-  Get My Resume
-</a>
+
+            <a
+              href="https://github.com/shivanibhadauria"
+              download
+              className="border-white/15 border z-10 bg-white text-gray-900 rounded-xl h-12 px-6 inline-flex items-center gap-2 font-semibold"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </div>
